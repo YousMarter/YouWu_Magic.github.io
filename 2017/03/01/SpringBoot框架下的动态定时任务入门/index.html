@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="YouWu_Magic, Java, JavaScript, Reactjs, Extjs" />
+  <meta name="keywords" content="后端,SpringBoot,Quartz,定时任务," />
 
 
 
@@ -84,15 +84,25 @@
 
 
 
-<meta name="description" content="YouWu_Magic`s Blog">
-<meta property="og:type" content="website">
-<meta property="og:title" content="非典型搬砖">
-<meta property="og:url" content="http://yoursite.com/child/index.html">
+<meta name="description" content="定时任务定时任务，顾名思义，即需要服务器在某个时间点执行的任务。就像一个闹钟，每次响起来的时候都要求我们做一些事情，这就是定时任务。
+定时任务分为动态的和静态的。下面我们就这两种类型的定时任务分别讲解和实现。
+
+静态定时任务静态的定时任务，是指该任务的执行时间得到配置后，服务启动之后，不在服务运行中改变的任务。如果需要改变这个任务执行的时间，我们将需要停止服务，修改时间配置文件，再重新启动服务后方">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SpringBoot框架下的动态定时任务入门">
+<meta property="og:url" content="http://yoursite.com/child/2017/03/01/SpringBoot框架下的动态定时任务入门/index.html">
 <meta property="og:site_name" content="非典型搬砖">
-<meta property="og:description" content="YouWu_Magic`s Blog">
+<meta property="og:description" content="定时任务定时任务，顾名思义，即需要服务器在某个时间点执行的任务。就像一个闹钟，每次响起来的时候都要求我们做一些事情，这就是定时任务。
+定时任务分为动态的和静态的。下面我们就这两种类型的定时任务分别讲解和实现。
+
+静态定时任务静态的定时任务，是指该任务的执行时间得到配置后，服务启动之后，不在服务运行中改变的任务。如果需要改变这个任务执行的时间，我们将需要停止服务，修改时间配置文件，再重新启动服务后方">
+<meta property="og:updated_time" content="2017-04-14T06:47:19.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="非典型搬砖">
-<meta name="twitter:description" content="YouWu_Magic`s Blog">
+<meta name="twitter:title" content="SpringBoot框架下的动态定时任务入门">
+<meta name="twitter:description" content="定时任务定时任务，顾名思义，即需要服务器在某个时间点执行的任务。就像一个闹钟，每次响起来的时候都要求我们做一些事情，这就是定时任务。
+定时任务分为动态的和静态的。下面我们就这两种类型的定时任务分别讲解和实现。
+
+静态定时任务静态的定时任务，是指该任务的执行时间得到配置后，服务启动之后，不在服务运行中改变的任务。如果需要改变这个任务执行的时间，我们将需要停止服务，修改时间配置文件，再重新启动服务后方">
 
 
 
@@ -110,7 +120,7 @@
   };
 </script>
 
-  <title> 非典型搬砖 </title>
+  <title> SpringBoot框架下的动态定时任务入门 | 非典型搬砖 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -131,9 +141,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -230,9 +238,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -252,191 +260,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/03/01/ExtJs快速入门之搭建Extjs开发环境(1)/" itemprop="url">
-                  ExtJs快速入门之搭建Extjs开发环境(1)
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-03-01T22:25:25+08:00" content="2017-03-01">
-              2017-03-01
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/ExtJs/" itemprop="url" rel="index">
-                    <span itemprop="name">ExtJs</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/03/01/ExtJs快速入门之搭建Extjs开发环境(1)/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/01/ExtJs快速入门之搭建Extjs开发环境(1)/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h4 id="下载ExtJs"><a href="#下载ExtJs" class="headerlink" title="下载ExtJs"></a>下载ExtJs</h4><p>目前ExtJs正式发行版本为<strong>6.2</strong>，由于访问Sencha的官网非常之卡，所以建议同学们选择国内的第三方下载。</p>
-<p>首先，<a href="http://extjs.org.cn/" target="_blank" rel="external">访问Sencha中文站</a>，接着找到ExtJs6.2正式版下载之。在我写这篇文章的时候，这个地址仍然可用：<a href="http://pan.baidu.com/s/1hssLw5e" target="_blank" rel="external">http://pan.baidu.com/s/1hssLw5e</a></p>
-<p>下载之后解压，我们发下整个框架的重量大概有574M，而我们开发时需要使用到的只有其中的很小一部分。</p>
-<h4 id="搭建项目骨架"><a href="#搭建项目骨架" class="headerlink" title="搭建项目骨架"></a>搭建项目骨架</h4><p>我们打开解压后的ExtJs，大概构成为这样：</p>
-<ul>
-<li>ext-bootstrap.js </li>
-<li>build </li>
-<li>packages</li>
-<li>……</li>
-</ul>
-<p>我们这里大概目前只需要用到这几个。</p>
-<p>打开我们的IDE，新建一个项目。我们大概需要这几个文件就可以搭建一个ExtJs骨架。</p>
-<ol>
-<li>ext-bootstrap.js</li>
-<li>build/ext-all.js</li>
-<li>build/ext-all-debug.js</li>
-<li>build/classic/locale/locale-zh_CN.js</li>
-</ol>
-<p>大概如下图所示：</p>
-<p><img src="http://chuantu.biz/t5/48/1488379312x3663207189.jpg" alt=""></p>
-<p>然后我们我们新建一个html和js文件来测试ExtJs是否加载后可用。</p>
-<ul>
-<li><p>新建一个app.js    </p>
-<pre><code>Ext.onReady(function () {
-    Ext.create(&apos;Ext.panel.Panel&apos;, {
-    title: &apos;Hello&apos;,
-    width: &apos;100%&apos;,
-    height: &apos;100%&apos;,
-    html: &apos;&lt;p&gt;World!&lt;/p&gt;&apos;,
-    items:[{
-        xtype : &apos;button&apos;,
-        text : &apos;ClickMe&apos;,
-        border : true,
-        style : &apos;border : 1px blue solid&apos;,
-        width : &apos;10%&apos;，
-        handler : function(){
-            alert(&apos;clicked&apos;);
-        }
-    }],
-    renderTo: Ext.getBody()
-    });
-});
-
-上面的代码我们创建了一个Panel，然后定义了一系列的配置。这个Panel下有个button，点击该button会调用&apos;handler&apos;所定义的function.
-关于Extjs组件的各种定义和创建方式会在之后谈到，目前我们先把Extjs跑起来.
-</code></pre></li>
-<li><p>新建一个index.html然后将以上说到的js文件按如下顺序引入： </p>
-<pre><code>&lt;head&gt;
-&lt;meta charset=&quot;UTF-8&quot;&gt;
-&lt;title&gt;ExtJs入门&lt;/title&gt;
-&lt;script src=&quot;lib/extjs/ext-all.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;lib/extjs/ext-all-debug.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;lib/extjs/ext-bootstrap.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;lib/extjs/locale-zh_CN.js&quot;&gt;&lt;/script&gt;
-&lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
-&lt;/head&gt;
-</code></pre></li>
-<li><p>我们用浏览器打开这个index.html可以看到下图效果：<br><img src="http://chuantu.biz/t5/48/1488415180x2101693473.jpg" alt=""></p>
-</li>
-</ul>
-<p>至此，页面使用了<strong>Extjs</strong>显示出了我们所定义的组件。</p>
-<p>之后我们会在此基础上用<strong>Extjs</strong>逐渐构建自己的<strong><em>门户应用</em></strong>，通过完整的项目实践，认真地把各种坑填一发。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/01/SpringBoot框架下的动态定时任务入门/" itemprop="url">
-                  SpringBoot框架下的动态定时任务入门
-                </a>
+                SpringBoot框架下的动态定时任务入门
               
             
           </h1>
@@ -502,9 +326,7 @@
       
 
       
-        
-          
-            <h4 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h4><p>定时任务，顾名思义，即需要服务器在某个时间点执行的任务。就像一个闹钟，每次响起来的时候都要求我们做一些事情，这就是定时任务。</p>
+        <h4 id="定时任务"><a href="#定时任务" class="headerlink" title="定时任务"></a>定时任务</h4><p>定时任务，顾名思义，即需要服务器在某个时间点执行的任务。就像一个闹钟，每次响起来的时候都要求我们做一些事情，这就是定时任务。</p>
 <p>定时任务分为动态的和静态的。下面我们就这两种类型的定时任务分别讲解和实现。</p>
 <hr>
 <h4 id="静态定时任务"><a href="#静态定时任务" class="headerlink" title="静态定时任务"></a>静态定时任务</h4><p>静态的定时任务，是指该任务的执行时间得到配置后，服务启动之后，不在服务运行中改变的任务。如果需要改变这个任务执行的时间，我们将需要停止服务，修改时间配置文件，再重新启动服务后方才生效的任务。</p>
@@ -644,157 +466,68 @@ public class ExampleService {
 </code></pre><p>我们还可以根据scheduler中提供的各种method来拓展我们的定时任务管理器的功能。在这里就不赘述了。<br>我们只需要写一个service将整套管理器的方法暴露到客户端，就可以实现动态的管理定时任务。</p>
 <h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>单独使用Quartz并不困难。但是与SpringBoot整合需要阅读不少官方文档和阅读源代码，这里就大概说一下，方便大佬们cv拿走。不送！</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/02/15/写在2017/" itemprop="url">
-                  写在2017
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-02-15T17:04:45+08:00" content="2017-02-15">
-              2017-02-15
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/随笔/" itemprop="url" rel="index">
-                    <span itemprop="name">随笔</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
+            <a href="/tags/后端/" rel="tag">#后端</a>
           
-
+            <a href="/tags/SpringBoot/" rel="tag">#SpringBoot</a>
           
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2017/02/15/写在2017/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/15/写在2017/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
+            <a href="/tags/Quartz/" rel="tag">#Quartz</a>
           
-
-          
-
-          
-          
-
+            <a href="/tags/定时任务/" rel="tag">#定时任务</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>新年开春，加入了一家新公司，继续磨练，等待契机。<br>过去的一年经历了很多也学习了很多，新的一年希望继续稳步向前。工作之余在此记录一些填过的坑，方便自己回头观望。<br>顺便分享出来供大佬们吐槽，督促我进步，同时希望能帮到刚入坑的同学。</p>
-<h3 id="小弟介绍"><a href="#小弟介绍" class="headerlink" title="小弟介绍"></a>小弟介绍</h3><p>一枚走在冷风中的资深玩家。<br>PS：C/C++恕不奉陪。</p>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/15/写在2017/" rel="next" title="写在2017">
+                <i class="fa fa-chevron-left"></i> 写在2017
+              </a>
+            
+          </div>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/03/01/ExtJs快速入门之搭建Extjs开发环境(1)/" rel="prev" title="ExtJs快速入门之搭建Extjs开发环境(1)">
+                ExtJs快速入门之搭建Extjs开发环境(1) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -802,6 +535,14 @@ public class ExampleService {
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/01/SpringBoot框架下的动态定时任务入门/"
+           data-title="SpringBoot框架下的动态定时任务入门" data-url="http://yoursite.com/child/2017/03/01/SpringBoot框架下的动态定时任务入门/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -821,8 +562,17 @@ public class ExampleService {
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -872,6 +622,17 @@ public class ExampleService {
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#定时任务"><span class="nav-number">1.</span> <span class="nav-text">定时任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#静态定时任务"><span class="nav-number">2.</span> <span class="nav-text">静态定时任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#动态定时任务"><span class="nav-number">3.</span> <span class="nav-text">动态定时任务</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Quartz与SpringBoot集成"><span class="nav-number">4.</span> <span class="nav-text">Quartz与SpringBoot集成</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#总结"><span class="nav-number">5.</span> <span class="nav-text">总结</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -958,6 +719,10 @@ public class ExampleService {
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
