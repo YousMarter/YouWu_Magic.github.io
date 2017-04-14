@@ -350,9 +350,9 @@ public void testSchedulingTask() {
 <table>
 <thead>
 <tr>
-<th>注解变量–</th>
-<th>示例参数–</th>
-<th>意义–</th>
+<th>注解变量</th>
+<th>示例参数</th>
+<th>意义</th>
 </tr>
 </thead>
 <tbody>
@@ -454,7 +454,6 @@ public class ExampleService {
     public void startJob(){
         try {
             scheduler.start();
-            SyncTimeSetting.setState(true);
         } catch (SchedulerException e) {
             e.printStackTrace();
         }

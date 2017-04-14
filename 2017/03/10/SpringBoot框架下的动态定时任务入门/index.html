@@ -96,7 +96,7 @@
 定时任务分为动态的和静态的。下面我们就这两种类型的定时任务分别讲解和实现。
 
 静态定时任务静态的定时任务，是指该任务的执行时间得到配置后，服务启动之后，不在服务运行中改变的任务。如果需要改变这个任务执行的时间，我们将需要停止服务，修改时间配置文件，再重新启动服务后方">
-<meta property="og:updated_time" content="2017-04-14T06:51:49.000Z">
+<meta property="og:updated_time" content="2017-04-14T08:14:57.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SpringBoot框架下的动态定时任务入门">
 <meta name="twitter:description" content="定时任务定时任务，顾名思义，即需要服务器在某个时间点执行的任务。就像一个闹钟，每次响起来的时候都要求我们做一些事情，这就是定时任务。
@@ -353,9 +353,9 @@ public void testSchedulingTask() {
 <table>
 <thead>
 <tr>
-<th>注解变量–</th>
-<th>示例参数–</th>
-<th>意义–</th>
+<th>注解变量</th>
+<th>示例参数</th>
+<th>意义</th>
 </tr>
 </thead>
 <tbody>
@@ -457,7 +457,6 @@ public class ExampleService {
     public void startJob(){
         try {
             scheduler.start();
-            SyncTimeSetting.setState(true);
         } catch (SchedulerException e) {
             e.printStackTrace();
         }
